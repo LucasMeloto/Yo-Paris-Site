@@ -1,0 +1,264 @@
+
+.cabecalho {
+    position: relative;
+    background: #ffffff;
+    margin-bottom: 25px;
+}
+
+/*Produtos*/
+
+.produto-imagem {
+    width: 100%;
+    box-shadow: 0 0 10px #ccc;
+    margin-top: 40px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.produto-imagem img{
+    height: 300px;
+    border-radius: 20px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+
+.produto-imagem img:hover{
+  transform: scale(1.14);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.produto-detalhes {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px #ccc;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+}
+.produto-detalhes h2{
+    font-family: 'Yellowtail', sans-serif;
+    font-size: 35px;
+}
+
+.categorias{
+    display: flex;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.categorias p{
+    margin: 0;
+    font-size: 16px;
+}
+
+.categorias a{
+    padding: 5px;
+    border: 2px solid #a8a8aa;
+    border-radius: 20px;
+}
+
+/* lista */
+
+.filtros{
+    margin-bottom: 35px !important;
+}
+
+.list-itens .item{
+    height: auto !important;
+}
+
+.item .item-text{
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+    font-weight: 600;
+  }
+
+.produto-detalhes i , .Comentarios i{
+    cursor: pointer;
+}
+
+.preco h4{
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+.preco h3{
+    color: #ff0202;
+}
+
+/* Descricão */
+
+.descricao-itens{
+    
+    width: 100%;
+    box-shadow: 0 0 10px #e6e6e6;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.titulo-D {
+    width: 98%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: #DB8F37;
+    color: #fff;
+}
+
+/* Perguntas  */
+
+.Perguntas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 10px #e6e6e6;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+}
+
+.Perguntas a {
+    color: #000;
+    font-weight: 600;
+}
+
+
+/* Comentarios */
+
+.Titulo-C{
+    width: 98%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background: #DB8F37;
+    color: #fff;
+}
+
+.comentario-box{
+
+    width: 100%;
+    gap: 20px;
+    box-shadow: 0 0 10px #e6e6e6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: #fff;
+    text-align: left;
+}
+
+.comentario-box p{
+    margin-top: 10px;
+}
+
+@media (min-width: 768px){
+    
+    /* Produtos  */
+
+    .produto-imagem{
+        width: 48%;
+        margin: 0 10px 0 0;
+        height: max-content;
+    }
+
+    .produto-imagem img{
+        height: 400px;
+    }
+    
+    .produto-detalhes{
+        width: 48%;
+        margin: 0;
+    }
+
+    .Produto-Selecionado .container{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .btn-produto{
+        margin-top: 40px !important;
+    }
+
+    /* Descrição  */
+    .descricao-itens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .titulo-D {
+        width: 45%;
+    }
+
+    .Titulo-C{
+        width: 25%;
+    }
+
+ /* Carrossel  */
+
+ #filtros-box{
+    width: 98% !important;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+    .produto-detalhes{
+        margin-top: 50px;
+    }
+
+    .produto-imagem{
+        max-width: 500px;
+        width: 49%;
+        margin: 0 10px 0 0;
+        object-fit: cover;
+    }
+
+    .produto-imagem img{
+        max-width: 450px;
+        width: 100%;
+    }
+    
+    .produto-detalhes{
+        max-width: 500px;
+        width: 49%;
+        margin: 0;
+    }
+
+    /* Descrição  */
+
+    .descricao-itens{
+     text-align: left;
+        width: 100%;
+    }
+
+    .titulo-D {
+        width: 290px;
+        text-align: center;
+    }
+
+
+}
+

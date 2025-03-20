@@ -1,0 +1,175 @@
+
+#sidebarMenu{
+    background-color: #fff !important;
+}
+
+.nav-item i{
+    font-size: 20px;
+    color: black;
+}
+
+.nav-item span{
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+.menunav li {
+    display: flex;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    align-items: center;
+    height: 50px;
+    transition: all .1s ease;
+}
+
+.menunav li a:hover {
+    width: 100%;
+    background: #e47070;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.menunav li a:hover span {
+    margin-left: 16px; /
+}
+
+.menunav li a:hover i {
+    font-size: 25px;
+    color: #fff;
+}
+
+
+/* Filtro de Preço */
+
+.list-itens{
+    width: 150px;
+    padding: 0px;
+    display: flex;
+    gap: 10px;
+}
+
+.list-itens label{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.price-slider {
+    width: 200px;
+  }
+  
+  input[type=range] {
+    -webkit-appearance: none;
+    width: 160px;
+    height: 5px;
+    background: #c1bebe;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(0, 162, 255);
+    cursor: pointer;
+  }
+  
+  .price-values {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+  }
+  
+  #minPrice {
+    font-weight: bold;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #2cd139;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 920px){
+
+    .navega p{
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .Topo-a {
+        width: 150px;
+        height: 50px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .Topo-a img{
+
+        width: 30px;
+        height: 30px;
+    }
+
+    .Topo-a span{
+        font-size: 28px;
+    }
+
+    .usuario{
+        flex-wrap: nowrap !important;
+    }
+
+    .navega p {
+        font-size: 12px !important;
+    }
+
+    .navega i {
+        font-size: 20px !important;
+    }
+
+    .foto{
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .btn-sair{
+        width: 50px;
+        height: 45px;
+        font-size: 14px !important;
+        padding: 9px !important;
+        text-align: center;
+    }
+    
+    .menunav li {
+        
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+
+    .nav-item span{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1470px)
+  {
+    .nav-item span {
+         font-size: 18px;
+     }
+  }
+
+
+
+
+

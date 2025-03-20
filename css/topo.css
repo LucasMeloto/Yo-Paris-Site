@@ -1,0 +1,136 @@
+
+.Barra-Topo{
+    background: #000000;
+}
+
+.Titulo {
+    display: flex;
+    justify-content: start; 
+    align-items: center;
+    flex: 1; 
+  }
+.Titulo h4{
+    font-family: "Yellowtail";
+    font-size: 30px;
+    color: #ffffff;
+    
+}
+
+.Topo-a{
+    font-family: "Yellowtail";
+    font-size: 35px;
+    border-radius: 0px 5px 5px 0px;
+    background: #ffffff;
+}
+
+.Topo-a span{
+    color: #000;
+}
+
+.Topo-a img{
+    width: 40px;
+    height: 40px;
+}
+
+.navega{
+    width: 20%;
+}
+
+.usuario{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.usuario img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navega p{
+    width: 100px;
+    margin: 0px;
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.navega i{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.navega .btn-sino{
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+
+.foto{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.btn-sair{
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff !important;
+}
+
+.btn-sair:hover{
+    background: #fff;
+    border: 2px solid #000000;
+    color: #000000 !important;
+    cursor: pointer;
+}
+
+.theme-toggler{
+    background: var();
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+  }
+.theme-toggler span{
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+.theme-toggler span.active{
+    background: var(--clr-primary);
+    color: #fff;
+  }
+
+
+
+  @media(max-width: 1024px){
+
+    .usuario img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+  }
+
+  @media(max-width: 1470px)
+  {
+     .usuario {
+         flex-wrap: nowrap;
+     }
+  }

@@ -1,0 +1,955 @@
+body {
+    font-family: "Poppins", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Kanit", sans-serif;
+}
+
+p {
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Gerais */
+
+
+.container {
+    width: 98%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a,
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.gradientsocial {
+    background: linear-gradient(180deg , #d48787, #FF5251, #FF9270, #FCEB38);
+    background-clip: text;
+    /*coloca background na area do texto*/
+    -webkit-text-fill-color: transparent;
+}
+
+.btn {
+    background: #000;
+    font-family: 'Yellowtail', sans-serif;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    border: 0;
+}
+
+/* Topo */
+
+#topo {
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+
+#topo .container {
+    width: 100%;
+    padding: 0px;
+    height: auto;
+}
+
+#topo a {
+    color: #000000;
+}
+
+#topo span {
+    color: #000000;
+}
+
+
+.cabecalho {
+    width: 100%;
+    text-align: center;
+    font-family: 'Yellowtail', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-top: 5px;
+    z-index: 2;
+}
+
+/* fazer um transition aqui */
+
+.fixed {
+    position: relative;
+}
+
+.cabecalho ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cabecalho img {
+    width: 35px;
+    height: 35px;
+}
+
+
+.fixed-scroll {
+    position: fixed;
+    background: #fff !important;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.fixed-scroll a {
+    color: #000000;
+}
+
+.fixed-scroll span {
+    color: #000000 !important;
+}
+
+
+.Logo {
+    padding: 5px;
+    /* margin-left: 80px; */
+    border-radius: 20px;
+}
+
+.Logo span {
+    font-style: normal;
+    color: #ffffff
+}
+
+.cabecalho a {
+    width: 32px;
+    height: 32px;
+}
+
+.login{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* .carrinho{
+    padding-left: 35px;
+} */
+
+
+/* menu  */
+
+
+.nav-burg {
+    position: absolute;
+
+}
+
+.hamburger {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    outline: none;
+    border: transparent;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.hamburger::before .hamburger::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #000;
+    margin-top: 5px;
+}
+
+.hamburger i {
+    color: #000;
+}
+
+.nav-list {
+    position: fixed;
+    list-style: none;
+    top: 0;
+    left: 0;
+    width: 75vw !important;
+    height: 100vh;
+    border-radius: 0 10px 10px 0px;
+    background: #ffffff;
+    font-family: "Poppins", sans-serif;
+    clip-path: circle(75px at 10% -20%);
+    transition: 1s ease-out;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    z-index: 2;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #000000 !important;
+
+}
+
+.nav-burg.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    color: #000;
+}
+
+
+/* Campo de Pesquisa  */
+
+.campoform {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 99px;
+    outline: none;
+    border: transparent;
+}
+
+#Busca {
+    line-height: 0px;
+}
+
+.pesquisa {
+    width: 235px;
+    height: 25px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    border: transparent;
+}
+
+.lupa {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color: #fff;
+    background: none;
+    border: transparent;
+}
+
+input[type="text"] {
+    color: #fff;
+
+}
+
+input[type="text"]::placeholder {
+    color: #fff;
+}
+
+/* carrossel */
+
+#carouselExampleIndicators {
+    z-index: 1;
+}
+
+
+.carousel {
+    width: 100%;
+    height: auto;
+}
+
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.carousel-inner {
+    height: 350px;
+}
+
+.carousel-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Lançamentos */
+
+#Lancamentos {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: #E7E7E7;
+}
+
+
+#cCarousel {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  #cCarousel .arrow {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 1;
+    font-size: 26px;
+    color: white;
+    background: #00000072;
+    cursor: pointer;
+  }
+  
+  #cCarousel #c-prev {
+    left: 0px;
+  }
+  
+  #cCarousel #c-next {
+    right: 0px;
+  }
+  
+  #ccarousel-vp {
+    width: 770px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .infos h3{
+    font-size: 18px;
+  }
+  
+  @media (max-width: 770px) {
+    #ccarousel-vp {
+      width: 510px;
+    }
+  }
+  
+  @media (max-width: 510px) {
+    #ccarousel-vp {
+      width: 250px;
+    }
+  }
+  
+  #cCarousel #cCarousel-inner {
+    display: flex;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    gap: 10px;
+    left: 0px;
+  }
+  
+  .cCarousel-item {
+    width: 250px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cCarousel-item img {
+    width: 100%;
+    object-fit: cover;
+    min-height: 246px;
+    color: white;
+  }
+  
+  .cCarousel-item .infos {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    color: black;
+  }
+  
+  .cCarousel-item .infos button {
+    background: #259b6e;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+
+.titulo-lancamentos h2 {
+    width: 98%;
+    font-size: 30px;
+    font-family: 'Yellowtail', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.produtos {
+    width: 98%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 2;
+}
+
+.produtobox, .fazer-box {
+    display: block;
+    text-align: center;
+}
+
+.produtobox p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.produtobox img {
+    width: 230px;
+    margin-bottom: 15px;
+}
+
+
+/* Sobre Nós  */
+
+#sobre {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: rgb(185, 102, 55, 0.1);
+}
+
+.titulo-sobre {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.titulo-sobre h3 {
+    font-size: 30px;
+    font-family: 'Yellowtail', sans-serif;
+}
+
+.titulo-sobre p {
+    font-size: 20px;
+}
+
+.carousel-sobre img {
+    height: 270px;
+    border-radius: 20px;
+}
+
+
+/* Nosso jeito de fazer produtos */
+
+
+.fazer-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.titulo-jeito h3{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.fazer-box span{
+    margin: 15px 0 15px 0;
+}
+
+.fazeritens i{
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    background: rgb(185, 102, 55, 0.1);
+    border-radius: 50%;
+    padding-top: 9px;
+    margin-bottom: 10px;
+}
+
+/* contato  */
+
+
+.titulo-contato h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Yellowtail', sans-serif;
+    margin-top: 40px;
+}
+
+.mapa iframe{
+    width: 98%;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.cards , .card-textos{
+    text-align: center;
+    background: #fafafa;
+    border-radius: 10px;
+}
+
+.card-textos h3{
+    margin-top: 40px;
+    height: 50px;
+    font-size: 45px;
+    font-family: 'Yellowtail', sans-serif;
+}
+
+.card-textos p {
+    font-size: 18px;
+}
+
+.equipe-card {
+    display: block;
+    box-shadow: 0 0 10px #ccc;
+    margin-top: 40px;
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+    transition: all .4s;
+    position: relative;
+    border-radius: 10px;
+}
+
+.equipe-card:hover .gradientsocial {
+    background: #fff;
+    background-clip: text;
+}
+
+.equipe-card:hover {
+    background: linear-gradient(180deg , #d48787, #FF5251, #FF9270, #FCEB38);
+    transform: translateY(-10px);
+}
+
+.equipe-card:hover h4,
+.equipe-card:hover p {
+    color: #fff;
+    border-color: #fff;
+}
+
+.equipe-card h3 {
+    font-size: 20px;
+    color: #000000;
+    margin-top: 5px;
+}
+
+.equipe-card p {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.equipe-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.equipe-card p {
+    border: 2px solid #a8a8aa;
+    border-radius: 30px;
+    color: #818080;
+}
+
+.equipe-card ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+
+.sociais {
+    font-size: 20px;
+    filter: drop-shadow(0 0 2px #f88467);
+}
+
+
+/* Revendedora  */
+
+#revendendora{
+    text-align: center;
+    background: rgb(185, 102, 55, 0.1);
+}
+
+.revendedora-conteudo h3{
+    font-size: 30px;
+    font-family: 'Yellowtail', sans-serif;
+}
+
+.revendedora-conteudo .btn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.img-reven img{
+    border-radius: 20px;
+} 
+
+
+/* rodapé */
+
+    #rodape{
+        
+        background: #212121;
+        text-align: center;
+    }
+
+    #rodape h4 {
+        color: #fff;
+        font-size: 22px;
+        
+    }
+
+    .Logo-rodape{
+        font-family: 'Yellowtail', sans-serif;
+        font-size: 22px;
+    }
+
+    .titulo-rodape{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+
+    .titulo-rodape a{
+        width: 32px;
+        height: 32px;
+    }
+
+    .titulo-rodape img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .rodape-sobre{
+        margin-bottom: 40px;
+    }
+
+    .rodape-sobre h4 {
+        margin-bottom: 20px;
+    }
+    
+    .rodape-sobre a {
+        font-size: 16px;
+    }
+
+    .rodape-contato {
+        margin-bottom: 40px;
+    }
+
+    .rodape-contato h4{
+        margin-bottom: 20px;
+    }
+
+    .rodape-contato p{
+        color: #818080;
+    }
+
+    .suporte-rodape{
+        margin-bottom: 40px ;
+    }
+
+    .suporte-rodape ul{
+        padding: 0;
+    }
+
+    .metodos img{
+        width: 35px;
+        height: 35px;
+        margin-bottom: 40px;
+    }
+
+    .sociais-rodape ul{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 0;
+    }
+
+    .sociais-rodape{
+        font-size: 22px;
+    }
+
+    /* copydev  */
+
+    .copydev p {
+        color: #fff;
+        margin: 0;
+    }
+
+
+@media (min-width: 375px) {}
+
+@media (min-width: 426px) {}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+
+
+    /* Nosso jeito de fazer produtos */
+
+    .logotipo{
+        justify-content: center !important;
+    }
+ 
+    .fazer-box{
+        flex-direction: row;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    /* contato  */
+
+    .contato-box{
+        display: flex;
+        width: 49%;
+    }
+
+    .mapa iframe{
+        height: 350px;
+        margin-bottom: 10px;
+    }
+
+    .servico-card {
+        width: 48%;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .equipe-card {
+        width: 30%;
+        height: 320px;
+    }
+
+    /* Revendedora  */
+
+    #revendendora .container{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .revendedora-conteudo{
+        width: 48%;
+    }
+
+    .img-reven{
+        width: 48%;
+    }
+
+    .btn:hover{
+        background: linear-gradient(180deg , #d48787, #FF5251, #FF9270, #FCEB38);
+    }
+    
+
+    /* rodapé */
+
+
+    #rodape .container {
+        flex-direction: row;
+    }
+
+    .titulo-rodape,.sociais-rodape,.copydev{
+        width: 100%;
+    }
+
+   .rodape-sobre, 
+   .rodape-contato,
+   .suporte-rodape, 
+   .pagamento{
+    width: 50%;
+   }
+    
+
+}
+
+@media (min-width: 992px) {
+
+    .nav-list {
+        position: relative;
+        width: initial !important;
+        height: 60px;
+        top: initial;
+        left: initial;
+        background: rgba(128, 128, 128, 0.5);
+        clip-path: none;
+        border-radius: 20px;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 0;
+        z-index: 0;
+        padding: 10px 0px 0px 0px;
+        cursor: pointer;
+    }
+
+    .nav-burg {
+        position: initial;
+        width: 100%;
+        height: 50px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-list a {
+        color: #000 !important;
+    }
+
+    .carousel-inner {
+        height: 600px;
+    }
+
+    /* Lançamentos */
+
+    .produtos {
+        display: flex;
+        justify-content: space-around;
+        gap: 25px;
+    }
+
+    .titulo-lancamentos h2 {
+        font-size: 45px;
+    }
+
+    .produtobox {
+        width: 24%;
+        height: 25%;
+
+    }
+
+
+    /* sobre  */
+
+    .sobre-box {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .titulo-sobre {
+        width: 40%;
+    }
+
+    .titulo-sobre h3 {
+        font-size: 42px;
+    }
+
+    .titulo-sobre p {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    #carrossel-sobre {
+        width: 49%;
+        height: 320px !important;
+        margin-bottom: 20px;
+
+    }
+
+    .carousel-sobre img {
+        height: 320px;
+    }
+
+    /* Nosso jeito de fazer produtos */
+    
+    .fazer-box{
+        justify-content: space-around;
+    }
+    
+
+    /* contato  */
+
+    .equipe-card {
+        width: 31%;
+        height: 340px;
+    }
+
+    .mapa iframe{
+        height: 500px;
+        margin-bottom: 10px;
+    }
+
+    /* Revendedora  */
+
+    #revendendora .container{
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .revendedora-conteudo{
+
+        width: 40%;
+    }
+
+    /* sobre  */
+
+    #rodape .container {
+        flex-wrap: nowrap;
+        justify-content: sp;
+    }
+}

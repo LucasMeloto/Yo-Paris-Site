@@ -1,0 +1,131 @@
+.dash-container {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dash-header {
+    background-color: #4071f4;
+    color: #fff;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.dash-content {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.dash-box {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.dash-box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dash-box i {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.dash-box.users {
+    background-color: #fff;
+    border: 1px solid #ebb626;
+    color: #000;
+
+    &:hover{
+        background: #ebb626;
+        color: #fff;
+    }
+}
+
+.dash-box.pages {
+    background-color: #fff;
+    border: 1px solid #42f456;
+    color: #000;
+    &:hover{
+        background: #42f456;
+        color: #fff;
+    }
+}
+
+.dash-box.posts {
+    background-color: #fff;
+    border: 1px solid #32e5f1;
+    color: #000;
+    &:hover{
+        background: #32e5f1;
+        color: #fff;
+    }
+}
+
+.dash-box.visitors {
+    background-color: #fff;
+    border: 1px solid #d12121;
+    color: #000;
+    &:hover{
+        background: #d12121;
+        color: #fff;
+    }
+}
+
+
+
+
+/* Tabela */
+
+.table-container {
+    width: 100%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.table-header {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #f4f4f4;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
